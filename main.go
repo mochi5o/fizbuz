@@ -41,7 +41,6 @@ func FizBuz(in string) (string, error) {
 	case i%5 == 0:
 		// 5の倍数ならBuzz
 		return "Buzz", nil
-	default:
-        return strconv.Itoa(i), nil
 	}
+	return strconv.Itoa(i), nil
 }
