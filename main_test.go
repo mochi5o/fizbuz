@@ -13,6 +13,8 @@ func TestFizBuz(t *testing.T) {
 		"3の倍数ならFizz":  {"3", "Fizz", false},
 		"5の倍数ならBuzz":  {"5", "Buzz", false},
 		"15の倍数ならFizzBuzz": {"15", "FizzBuzz", false},
+		"3の倍数ならFizzBuzz": {"33", "FizzBuzz", false},
+		"3,5,15の倍数ではない場合はそのまま数字": {"2", "2", false},
 	}
 	for _, tt := range tests {
 		got, err := FizBuz(tt.in)
